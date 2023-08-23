@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useTransform, useScroll, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
+import Link from "next/link";
 
 export default function Home() {
   const container = useRef(null);
@@ -140,6 +141,8 @@ export default function Home() {
           />
         </motion.div>
       </div>
+      <Link href="/Design/Tailwind">Navigate To Tailwind Design</Link>
+      <Link href="/Design/Motion">Navigate To Animation</Link>
       <div className="bg-black h-screen"></div>
     </>
   );
